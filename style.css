@@ -1,0 +1,165 @@
+html{
+    font-family: 'Poppins';
+}
+
+.hero{
+    background: linear-gradient(180deg, rgba(42,46,81,1) 0%, rgba(29,29,55,1) 35%, rgba(28,27,51,1) 100%);
+    height: 100vh;
+    position: relative;
+}
+
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav{
+    display: flex;
+    color:white;
+    padding:20px;
+    margin-right: 30px;
+}
+
+.nav-elements{
+    display: flex;
+    gap:20px;
+}
+
+.nav-elements li:hover{
+    color:#EB373A;
+    cursor: pointer;
+}
+
+.mycontent{
+    display: flex;
+    justify-content: space-evenly;
+    padding:20px;
+}
+
+.content-info{
+    width:400px;
+    color:white;
+}
+
+.spider-button{
+    margin-top: 10px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;
+    background-color: transparent;
+    color:white;
+    border: 2px solid white;
+
+}
+
+.spider-button:hover{
+    color:#EB373A;
+    border: 2px solid #EB373A;
+    cursor: pointer;
+}
+
+
+.spider{
+    animation: 2s spider-animate ;
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+
+.spider-logo{
+    animation: 2s logo-animate ;
+}
+
+
+.rating{
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+    color: white;
+    animation: 2s spider-animate;
+    
+}
+
+@keyframes spider-animate {
+    0%{
+        transform: translateX(1000px);
+    }
+    100%{
+        transform: translateX(0px);
+
+    }
+}
+
+@keyframes logo-animate {
+    0%{
+        transform: translateY(-1000px);
+ 
+    }
+    50%{
+        transform: translateY(80px);
+    }
+    75%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background: url("./st.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.itemC {
+    position: absolute;
+    width: 30vw;
+    left: 20%;
+    top: 150%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.tt {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5em;
+    line-height: 1;
+}
+
+.p1 {
+    color: rgb(211, 211, 211);
+    margin-top: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    height: 5.5vh;
+    width: 11vw;
+    margin-top: 5vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+}
+
